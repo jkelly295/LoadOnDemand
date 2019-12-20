@@ -17,7 +17,7 @@ namespace LoadOnDemandSQL2016.Models
              * See SQL statement for how db query is accomplishing this.
              */
 
-            var cString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\VSProjects4SourceTree\LoadOnDemandSQL2016\App_Data\Database1.mdf;Integrated Security=True";
+            var cString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 string sql = System.IO.File.ReadAllText(HttpContext.Current.Server.MapPath("/Models/SQL/GetItemData.sql"));
                 using (var connection = new SqlConnection(cString))
                 {
