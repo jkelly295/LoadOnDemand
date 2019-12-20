@@ -1,0 +1,11 @@
+﻿
+
+@model LoadOnDemandSQL2016.Models.Items
+
+@foreach (LoadOnDemandSQL2016.Models.Items.Item i in Model.ItemList) {
+    <div class="col-lg-4 text-center" >
+        <img src="~/Content/Images/@i.Image" class="img-responsive" />
+        <h3>@i.SKU</h3>
+        <h4>@i.Name</h4>
+    </div>
+}
